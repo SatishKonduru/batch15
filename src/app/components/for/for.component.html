@@ -1,0 +1,30 @@
+<h1>For Statement</h1>
+<!-- <div *ngFor="let name of names">
+  <h2>{{name}}</h2>
+</div> -->
+<!-- <div *ngFor="let name of names; index as i">
+  <h2>{{name}} ---- {{i}}</h2>
+</div> -->
+<!-- <div *ngFor="let name of names; first as f">
+  <h2>{{name}} ---- {{f}}</h2>
+</div> -->
+<!-- <div *ngFor="let name of names; last as l">
+  <h2>{{name}} ---- {{l}}</h2>
+</div> -->
+<!-- <div *ngFor="let name of names; even as e">
+  <h2>{{name}} ---- {{e}}</h2>
+</div> -->
+<!-- <div *ngFor="let name of names; odd as o">
+  <h2>{{name}} ---- {{o}}</h2>
+</div> -->
+
+<!-- <div *ngFor="let x of myNames | keyvalue">
+ <h1>{{x.key}} --- {{x.value}}</h1>
+</div> -->
+
+<h3 *ngFor="let x of myNames">
+    <h2 *ngFor="let y of x | keyvalue">
+      {{y.key}} -- {{y.value}}
+    </h2>
+    <hr>
+</h3>

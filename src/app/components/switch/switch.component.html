@@ -1,0 +1,16 @@
+<h1>Switch Case</h1>
+<div [ngSwitch]="myChoice">
+  <div *ngSwitchCase="'one'">
+    <h1>Monday</h1>
+  </div>
+  <div *ngSwitchCase="'two'">
+    <h1>Tuesday</h1>
+
+  </div>
+  <div *ngSwitchCase="'three'">
+    <h1>Wednesday</h1>
+  </div>
+  <div *ngSwitchDefault>
+    <h1>Wrong Choice</h1>
+  </div>
+</div>

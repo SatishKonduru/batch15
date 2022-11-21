@@ -1,0 +1,29 @@
+<h1>If Condition</h1>
+<h2 *ngIf="check; then true1 else case2"></h2>
+<h2>Para - 2</h2>
+<ng-template #case1>
+  <h3>False case 1</h3>
+  <h3>False case 1</h3>
+  <h3>False case 1</h3>
+  <h3>False case 1</h3>
+</ng-template>
+<ng-template #case2>
+  <h3>False case 2</h3>
+  <h3>False case 2</h3>
+  <h3>False case 2</h3>
+  <h3>False case 2</h3>
+</ng-template>
+<ng-template #true1>
+  <h1>True case 1</h1>
+  <h1>True case 1</h1>
+  <h1>True case 1</h1>
+  <h1>True case 1</h1>
+  <h1>True case 1</h1>
+</ng-template>
+<ng-template #true2>
+  <h1>True case 2</h1>
+  <h1>True case 2</h1>
+  <h1>True case 2</h1>
+  <h1>True case 2</h1>
+  <h1>True case 2</h1>
+</ng-template>

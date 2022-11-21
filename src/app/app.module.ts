@@ -10,6 +10,9 @@ import { CBindingComponent } from './components/c-binding/c-binding.component';
 import { SBindingComponent } from './components/s-binding/s-binding.component';
 import { EBindingComponent } from './components/e-binding/e-binding.component';
 import { FormsModule } from '@angular/forms';
+import { IfComponent } from './components/if/if.component';
+import { SwitchComponent } from './components/switch/switch.component';
+import { ForComponent } from './components/for/for.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FormsModule } from '@angular/forms';
     PropertyComponent,
     CBindingComponent,
     SBindingComponent,
-    EBindingComponent
+    EBindingComponent,
+    IfComponent,
+    SwitchComponent,
+    ForComponent
   ],
   imports: [
     BrowserModule,
