@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { IfComponent } from './components/if/if.component';
 import { SwitchComponent } from './components/switch/switch.component';
 import { ForComponent } from './components/for/for.component';
+import { ChildComponent } from './components/child/child.component';
+import { BuiltInPipesComponent } from './components/built-in-pipes/built-in-pipes.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ForComponent } from './components/for/for.component';
     EBindingComponent,
     IfComponent,
     SwitchComponent,
-    ForComponent
+    ForComponent,
+    ChildComponent,
+    BuiltInPipesComponent
   ],
   imports: [
     BrowserModule,

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'batch15';
+  public childData = ''
+  public parentMsg = "This is PARENT Message"
 }
