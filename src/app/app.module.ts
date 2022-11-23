@@ -15,6 +15,8 @@ import { SwitchComponent } from './components/switch/switch.component';
 import { ForComponent } from './components/for/for.component';
 import { ChildComponent } from './components/child/child.component';
 import { BuiltInPipesComponent } from './components/built-in-pipes/built-in-pipes.component';
+import { CourseNameComponent } from './components/course-name/course-name.component';
+import { CourseDetailsComponent } from './components/course-details/course-details.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { BuiltInPipesComponent } from './components/built-in-pipes/built-in-pipe
     SwitchComponent,
     ForComponent,
     ChildComponent,
-    BuiltInPipesComponent
+    BuiltInPipesComponent,
+    CourseNameComponent,
+    CourseDetailsComponent
   ],
   imports: [
     BrowserModule,
