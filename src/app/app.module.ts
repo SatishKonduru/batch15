@@ -17,6 +17,7 @@ import { ChildComponent } from './components/child/child.component';
 import { BuiltInPipesComponent } from './components/built-in-pipes/built-in-pipes.component';
 import { CourseNameComponent } from './components/course-name/course-name.component';
 import { CourseDetailsComponent } from './components/course-details/course-details.component';
+import { CourseService } from './services/course.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { CourseDetailsComponent } from './components/course-details/course-detai
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CourseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
