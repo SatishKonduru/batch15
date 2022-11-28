@@ -11,7 +11,11 @@ export class CourseDetailsComponent implements OnInit {
   constructor(private _courseService : CourseService) { }
 
   ngOnInit() {
-   this.course= this._courseService.getCourseDetails()
+  // this.course= this._courseService.getCourseDetails()
+  this._courseService.getCourseDetails()
+  .subscribe(res => {
+    this.course =  res
+  })
   }
 
 }

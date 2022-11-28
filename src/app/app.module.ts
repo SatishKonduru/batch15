@@ -18,7 +18,7 @@ import { BuiltInPipesComponent } from './components/built-in-pipes/built-in-pipe
 import { CourseNameComponent } from './components/course-name/course-name.component';
 import { CourseDetailsComponent } from './components/course-details/course-details.component';
 import { CourseService } from './services/course.service';
-
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +39,8 @@ import { CourseService } from './services/course.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule, 
+    HttpClientModule
   ],
   providers: [CourseService],
   bootstrap: [AppComponent]

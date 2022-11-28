@@ -1,17 +1,16 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { courseInterface } from '../course';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CourseService {
+private _dataURL = '../../assets/sharedData/course.json'
+  constructor(private _http: HttpClient) { }
 
-  constructor() { }
-
-  getCourseDetails(){
-    return [
-              {id: 1, name: "Angular", fee: 1000},
-              {id: 2, name: "React", fee: 2000},
-              {id: 3, name: "Angular Material", fee: 3000}
-          ]
+  getCourseDetails(): Observable<courseInterface[]>{
+  return  this._http.get<courseInterface[]>(this._dataURL)
   }
 }
