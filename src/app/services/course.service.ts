@@ -1,16 +1,22 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 import { courseInterface } from '../course';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CourseService {
-private _dataURL = '../../assets/sharedData/course.json'
+private _dataURL = '../../assets/sharedData/course123.json'
   constructor(private _http: HttpClient) { }
 
   getCourseDetails(): Observable<courseInterface[]>{
   return  this._http.get<courseInterface[]>(this._dataURL)
+  .pipe(catchError(this.incomingError))
+  }
+
+  incomingError(err: HttpErrorResponse ){
+     return throwError(err.message || "Unkown Server Error")
+  
   }
 }

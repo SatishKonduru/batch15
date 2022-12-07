@@ -8,7 +8,7 @@ import { CourseService } from 'src/app/services/course.service';
 })
 export class CourseNameComponent implements OnInit {
 public course = []
-
+public errMsg = ''
   constructor(private _courseService: CourseService) { }
 
   ngOnInit() {
@@ -17,7 +17,12 @@ public course = []
   this._courseService.getCourseDetails()
   .subscribe(res => {
     this.course = res
-  })
+  },
+
+    err =>{
+      console.log("Error message: ",err )
+      this.errMsg = err
+    } )
 
   }
 
