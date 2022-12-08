@@ -7,7 +7,7 @@ import { courseInterface } from '../course';
   providedIn: 'root'
 })
 export class CourseService {
-private _dataURL = '../../assets/sharedData/course123.json'
+private _dataURL = '../../assets/sharedData/course.json'
   constructor(private _http: HttpClient) { }
 
   getCourseDetails(): Observable<courseInterface[]>{

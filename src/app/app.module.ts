@@ -19,6 +19,9 @@ import { CourseNameComponent } from './components/course-name/course-name.compon
 import { CourseDetailsComponent } from './components/course-details/course-details.component';
 import { CourseService } from './services/course.service';
 import {HttpClientModule} from '@angular/common/http';
+import { FileNotFoundComponent } from './components/file-not-found/file-not-found.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialsModule } from './modules/angular-materials/angular-materials.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,13 +37,16 @@ import {HttpClientModule} from '@angular/common/http';
     ChildComponent,
     BuiltInPipesComponent,
     CourseNameComponent,
-    CourseDetailsComponent
+    CourseDetailsComponent,
+    FileNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule, 
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    AngularMaterialsModule
   ],
   providers: [CourseService],
   bootstrap: [AppComponent]
